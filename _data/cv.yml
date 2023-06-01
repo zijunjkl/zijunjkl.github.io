@@ -13,8 +13,8 @@
       institution: Rensselaer Polytechnic Institute
       year: 2022
       description:
-        - Thesis: Knowledge-augmented Deep Learning and its Applications
-        - Advisor: Dr. Qiang Ji
+        - Thesis Knowledge-augmented Deep Learning and its Applications
+        - Advisor Dr. Qiang Ji
     - title: M.S. Applied Mathematics
       institution: Rensselaer Polytechnic Institute
       year: 2022
@@ -22,14 +22,14 @@
       institution: Brown University
       year: 2017
       description:
-        - Master thesis: Multi-Frame Enrichment of Motion Segmentation
-        - Advisor: Dr. Benjamin Kimia
+        - Master thesis Multi-Frame Enrichment of Motion Segmentation
+        - Advisor Dr. Benjamin Kimia
     - title: B.S. Modern Physics
       institution: University of Science and Technology of China
       year: 2015
       description:
-        - Bachelor thesis: Analyze of Electron Diffraction and its Application
-        - Advisor: Dr. Linfan Zhu
+        - Bachelor thesis Analyze of Electron Diffraction and its Application
+        - Advisor Dr. Linfan Zhu
 
 - title: Experience
   type: time_table
