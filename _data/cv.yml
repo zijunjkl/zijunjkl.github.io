@@ -72,3 +72,9 @@
     - year: 2018
       items:
         - Rensselaer-IBM Artificial Intelligence Research Collaboration Scholarship
+
+- title: Service
+  type: map
+  contents:
+    - name: Reviewer
+      value: IEEE Transactions on Affective Computing; CVPR 2022, UAI 2022, ECCV 2022, UAI 2023
