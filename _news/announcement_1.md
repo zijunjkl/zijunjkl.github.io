@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2022-2-20 
+date: 2022-3-10 
 inline: true
 related_posts: false
 ---
 
-I am happy to join the Melady lab as a postdoc. Hello USC!
+Our paper is accepted for CVPR 2023! See you in Vancouver.
