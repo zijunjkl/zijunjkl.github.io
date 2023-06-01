@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper is accepted to CVPR 2023! See you in Vancouver.
+Our paper is accepted for CVPR 2023! See you in Vancouver.
