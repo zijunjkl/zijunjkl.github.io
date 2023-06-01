@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2022-3-11
+date: 2022-4-13
 inline: true
 related_posts: false
 ---
 
-Our paper is accepted for CVPR 2023! See you in Vancouver.
+I am honored to receive the 2023 Allen B. Dumont Prize.
