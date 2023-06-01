@@ -8,7 +8,7 @@ profile:
   image: my_pic.png
   image_circular: true # crops the image to make it circular
   address: >
-    <p>RTH 321, University of Southern California</p>
+    <p>University of Southern California</p>
     <p>Los Angeles, California</p>
 
 news: true  # includes a list of news items
