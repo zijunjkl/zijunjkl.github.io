@@ -20,4 +20,4 @@ I am currently a postdoc at the [Melady Lab](https://melady.usc.edu/) with Dr. Y
 
 My research interests are in Human-centered AI for Science. I am interested in probabilistic graphical models, Bayesian methods, and physics-informed deep learning. 
 
-I am actively looking for acadamic jobs.
+🔈: I am actively looking for acadamic jobs ✨✨
