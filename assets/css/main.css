@@ -516,7 +516,7 @@ footer.sticky-bottom {
   color: var(--global-theme-color);
 }
 .projects .card img {
-  width: 100%;
+  width: 50%;
 }
 .projects .card-item {
   width: auto;
