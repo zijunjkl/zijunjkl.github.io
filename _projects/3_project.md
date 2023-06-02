@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Data-Driven Discovery of Models
+description: funded by the Defense Advanced Research Projects Agency
+img: assets/img/darpa.jpg
+redirect: [https://unsplash.com](https://www.darpa.mil/program/data-driven-discovery-of-models)
 importance: 3
 category: work
 ---
