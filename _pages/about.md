@@ -5,7 +5,7 @@ permalink: /
 
 profile:
   align: right
-  image: my_pic.png
+  image: mypicture.png
   image_circular: true # crops the image to make it circular
   address: >
     <p>University of Southern California, Los Angeles</p>
