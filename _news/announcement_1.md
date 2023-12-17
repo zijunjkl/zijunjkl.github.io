@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2022-3-10 
+date: 2023-12-13 
 inline: true
 related_posts: false
 ---
 
-Our paper is accepted for CVPR 2023! See you in Vancouver.
+My survey paper ["Knowledge-augmented Deep Learning and Its Applications: A Survey"] (https://ieeexplore.ieee.org/document/10359123) finally got accepted to IEEE Transactions on Neural Networks and Learning Systems! 
