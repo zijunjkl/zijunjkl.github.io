@@ -36,7 +36,10 @@
   contents:
     - title: PostDoc 
       institution: University of Southern California
-      year: present
+      year: 2023 - present
+      description:
+        - Developing sophisticated algorithms for physics-informed deep learning using causal models and physical information.
+        - Exploring their applications in time-series forecasting, urban transportation, and health applications.
       
     - title: Research Assistant
       institution: Rensselaer Polytechnic Institute
@@ -65,7 +68,7 @@
   contents:
     - year: 2023 
       items: 
-        - Allen B. Dumont Prize
+        - Allen B. Dumont Prize from Rensselaer Polytechnic Institute
     - year: 2022
       items: 
         - UAI Scholarship
@@ -77,4 +80,4 @@
   type: map
   contents:
     - name: Reviewer
-      value: IEEE Transactions on Affective Computing; CVPR 2022, UAI 2022, ECCV 2022, UAI 2023
+      value: IEEE Transactions on Affective Computing; CVPR 2022, UAI 2022, ECCV 2022, UAI 2023, ICLR 2023
