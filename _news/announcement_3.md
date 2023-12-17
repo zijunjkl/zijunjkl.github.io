@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper has been provisionally accepted for MICCAI 2023!
+Our paper on Sim-to-Real Kinematics Reconstruction for Automatic Skill Assessment has been provisionally accepted for MICCAI 2023!
