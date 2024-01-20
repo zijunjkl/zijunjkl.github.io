@@ -16,7 +16,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am currently a postdoc at the [Melady Lab](https://melady.usc.edu/) with Dr. Yan Liu. I am also a research member at the [Hung Robotics Lab](https://hungroboticslab.com/) directed by Dr. Andrew Hung. I graduated from the Rensselaer Polytechnic Institute in 2022. I was a research assistant at the [Intelligent Systems Lab](https://sites.ecse.rpi.edu/~cvrl/) with Dr. Qiang Ji. I was selected as a research scholar for the [RPI-IBM AIRC program](https://airc.rpi.edu/) and worked closely with Dr. Tian Gao and Dr. Kartik Talamadupula.  
+I am currently a postdoc at the [Melady Lab](https://melady.usc.edu/) with Dr. Yan Liu. I graduated from the Rensselaer Polytechnic Institute in 2022. I was a research assistant at the [Intelligent Systems Lab](https://sites.ecse.rpi.edu/~cvrl/) with Dr. Qiang Ji. I was selected as a research scholar for the [RPI-IBM AIRC program](https://airc.rpi.edu/) and worked closely with Dr. Tian Gao and Dr. Kartik Talamadupula.  
 
 My research interests are in combining deep learning with domain knowledge to solve real-world challenges. I am particularly interested in utilizing probabilistic graphical models, Bayesian methods, and causality to achieve the goal. My research applications are centered around computer vision, with additional focus on natural language processing. Notably, my work has demonstrated its impact in the field of AI for Health.
 
