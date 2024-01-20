@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2022-4-13
+date: 2024-1-12
 inline: true
 related_posts: false
 ---
 
-I am honored to receive the 2023 Allen B. Dumont Prize from Rensselaer Polytechnic Institute
+Our Abstract on "Inter-dependencies between Suturing Skills to Improve Automatic Surgical Skill Assessment" has been accepted to **Podium Session** at the _2024 Annual Meeting of the American Urological Association (AUA)_!
