@@ -81,3 +81,5 @@
   contents:
     - name: Reviewer
       value: CVPR'(22,23), UAI'(22,23), ECCV'22, ICLR'23, IEEE Transactions on Affective Computing, EURO Journal on Transportation and Logistics
+    - name: Conference volunteer 
+      value: KDD'(23), Women in Machine Learning (WiML) 2023@NeurIPS
