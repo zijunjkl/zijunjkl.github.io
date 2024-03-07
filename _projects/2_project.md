@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Data-Driven Discovery of Models
-description: funded by the Defense Advanced Research Projects Agency
-img: assets/img/darpa.jpg
-redirect: https://www.darpa.mil/program/data-driven-discovery-of-models
+title: Deep STITCH
+description: Funded by the National Cancer Institute
+redirect: https://hungroboticslab.com/
 importance: 3
 category: work
 ---
