@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My last two PhD works have been accepted for publication at AISTATS 2024 and CVPR 2024! :tada::tada:
+My last two PhD works have been accepted for publication at [AISTATS 2024 and CVPR 2024](https://zijunjkl.github.io/publications/)! :tada::tada:
