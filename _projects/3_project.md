@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ### Data-Driven Discovery of Models
+title: Data-Driven Discovery of Models
 description: Funded by the Defense Advanced Research Projects Agency
 redirect: https://www.darpa.mil/program/data-driven-discovery-of-models
 importance: 3
