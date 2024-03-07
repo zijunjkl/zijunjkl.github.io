@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-05-31 
+date: 2024-02-29 
 inline: true
 related_posts: false
 ---
 
-Our paper on Sim-to-Real Kinematics Reconstruction for Automatic Skill Assessment has been provisionally accepted for MICCAI 2023!
+[A wonderful time talking to undergraduates through USC Theta Tau](https://www.instagram.com/p/C4HjZ8RrCDV/?igsh=ZWI2YzEzYmMxYg%3D%3D&img_index=1) :relaxed:
