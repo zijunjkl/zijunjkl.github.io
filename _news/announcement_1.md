@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-12-13 
+date: 2024-2-26 
 inline: true
 related_posts: false
 ---
 
-My survey paper ["Knowledge-augmented Deep Learning and Its Applications: A Survey"](https://ieeexplore.ieee.org/document/10359123) got accepted to IEEE Transactions on Neural Networks and Learning Systems! 
+My last two PhD works have been accepted for publication at AISTATS 2024 and CVPR 2024! :tada::tada:
