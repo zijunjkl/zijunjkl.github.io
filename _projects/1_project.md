@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Rensselaer-IBM Artificial Intelligence Research Collaboration
-description: a member of the IBM AI Horizons
+description: IBM AI Horizons
 redirect: https://airc.rpi.edu/
+img: /assets/img/AIRC.jpg
 importance: 3
 category: work
 ---
