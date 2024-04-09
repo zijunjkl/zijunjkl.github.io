@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-1-12
+date: 2024-4-6
 inline: true
 related_posts: false
 ---
 
-Our Abstract on "Inter-dependencies between Suturing Skills to Improve Automatic Surgical Skill Assessment" has been accepted to the _2024 Annual Meeting of the American Urological Association (AUA)_(Podium Session) !
+I am happy to give a talk at the [Women in Data Science (WiDS) Youth event](https://www.widsirvine.org/)!
