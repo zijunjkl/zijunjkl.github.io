@@ -20,4 +20,4 @@ I am currently a postdoc at the [Melady Lab](https://melady.usc.edu/) at the Uni
 
 My research interests are in combining deep learning with domain knowledge to solve real-world challenges. I am particularly interested in utilizing probabilistic graphical models, Bayesian methods, and causality to achieve the goal. My research applications are centered around computer vision, with additional focus on natural language processing. Notably, my work has demonstrated its impact in the field of AI for Health.
 
-🔈: I am joining the Michigan State University (MSU) as an Assistant Professor in Fall 2024. New journey begins :sparkles: :sparkles:
+🔈: I am joining Michigan State University (MSU) as an Assistant Professor in Fall 2024. New journey begins :sparkles: :sparkles:
