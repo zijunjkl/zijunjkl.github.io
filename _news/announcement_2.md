@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am happy to give a talk at the [Women in Data Science (WiDS) Youth event](https://www.widsirvine.org/)!
+I gave a talk at the [Women in Data Science (WiDS) Youth event](https://www.widsirvine.org/)
