@@ -138,7 +138,7 @@ layout: default
 								</li>
 							</ul>
 
-							<h4 id="researchinterestsH4" class="mt-2" 
+							<h4 id="educationH4" class="mt-2" 
 								>Education
 							</h4>
 
@@ -159,19 +159,25 @@ layout: default
 
 							<!-- News -->
 						          {% if page.news and site.announcements.enabled -%}
-						            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
+							<h4 id="NewsH4" class="mt-2" 
+								>News
+							</h4>
 						            {%- include news.html limit=false %}
 						          {%- endif %}
 						
 						          <!-- Latest posts -->
 						          {% if page.latest_posts -%}
-						            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
+						            <h4 id="latestpostsH4" class="mt-2" 
+								>Latest Posts
+							</h4>
 						            {%- include latest_posts.html %}
 						          {%- endif %}
 						
 						          <!-- Selected papers -->
 						          {% if page.selected_papers -%}
-						            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+						            <h4 id="selectedpapersH4" class="mt-2" 
+								>Selected Papers
+							</h4>
 						            {%- include selected_papers.html %}
 						          {%- endif %}
 						
