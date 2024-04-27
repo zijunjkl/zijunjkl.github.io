@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper is accepted to npj Digital Medicine.
+Our paper "Capturing Relationships between Suturing Sub-skills to Improve Automatic Suturing Assessment" is accepted to npj Digital Medicine.
