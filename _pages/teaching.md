@@ -17,7 +17,7 @@ nav_order: 5
       </div>
       <div class="col-sm-2 text-sm-right">
         <span class="badge">
-          541
+          F24
         </span>
       </div>
     </div>
