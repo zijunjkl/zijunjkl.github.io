@@ -22,7 +22,7 @@ nav_order: 5
     </div>
     <h6 class="font-italic mt-2 mt-sm-0">Fall 2024</h6>
     <ul class="card-text font-weight-light list-group list-group-flush">
-      <li class="list-group-item">Syllabus: <a href="">PDF</a> 
+      <li class="list-group-item">Syllabus: <a href="">PDF</a></li> 
     </ul>
   </div>
 </div>
