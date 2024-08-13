@@ -7,50 +7,32 @@ nav: true
 nav_order: 5
 ---
 
-<!-- pages/teaching.md -->
-<div class="projects">
-{%- if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {%- for category in page.display_categories %}
-  <h2 class="category">{{ category }}</h2>
-  {%- assign categorized_projects = site.teaching | where: "category", category -%}
-  {%- assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal -%}
-  <div class="container">
+<!-- Fall 2024 CSE801B -->
+<div class="card mt-3">
+  <div class="p-3">
     <div class="row">
-    {%- for project in sorted_projects -%}
-      {% include projects_horizontal.html %}
-    {%- endfor %}
+      <div class="col-sm-10">
+        <h5 id="comp311" class="card-title">Introduction to Data Mining</h5>
+        <h6 class="card-subtitle font-italic">Instructor</h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          541
+        </span>
+      </div>
     </div>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-sm-9">
+            Syllabus
+          </div>
+          <div class="col-sm-3">
+            <a href="">PDF</a>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
-  {%- else -%}
-  <div class="grid">
-    {%- for project in sorted_projects -%}
-      {% include projects.html %}
-    {%- endfor %}
-  </div>
-  {%- endif -%}
-  {% endfor %}
-
-{%- else -%}
-<!-- Display projects without categories -->
-  {%- assign sorted_projects = site.teaching | sort: "importance" -%}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal -%}
-  <div class="container">
-    <div class="row row-cols-2">
-    {%- for project in sorted_projects -%}
-      {% include projects_horizontal.html %}
-    {%- endfor %}
-    </div>
-  </div>
-  {%- else -%}
-  <div class="grid">
-    {%- for project in sorted_projects -%}
-      {% include projects.html %}
-    {%- endfor %}
-  </div>
-  {%- endif -%}
-{%- endif -%}
 </div>
+
