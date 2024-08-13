@@ -16,7 +16,7 @@ nav_order: 5
         <h6 class="card-subtitle font-italic">CSE 801B</h6>
       </div>
       <div class="col-sm-2 text-sm-right">
-        <span class="badge">
+        <span class="badge bg-warning">
           2024
         </span>
       </div>
