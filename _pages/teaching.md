@@ -24,7 +24,7 @@ nav_order: 5
     <ul class="card-text font-weight-light list-group list-group-flush">
       <li class="list-group-item">This course will cover core topics in data mining and their applications. The topics covered include classification, association, clustering, and anomaly detection. The course aims at helping the students understand different techniques that can be applied for different problems and their limitations, evaluate the results and select the appropriate methods when faced with a new problem. It will give students hands-on experience applying those techniques by implementing a complete solution using one or more data mining software packages.</li> 
       <li class="list-group-item">Syllabus: <a href="/assets/pdf/syllabus_fs24.pdf">PDF</a></li> 
-      <li class="list-group-item"><a href="/24Fall.html">Course webpage</a></li>
+      <li class="list-group-item"><a href="/courses/24F-CSE801B.html">Course webpage</a></li>
     </ul>
   </div>
 </div>
