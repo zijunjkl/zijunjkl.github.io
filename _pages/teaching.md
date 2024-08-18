@@ -8,6 +8,7 @@ nav_order: 5
 ---
 
 <!-- Fall 2024 CSE801B -->
+<a href="/teaching/introduction-to-data-mining/" class="text-decoration-none">
 <div class="card mt-3">
   <div class="p-3">
     <div class="row">
@@ -22,8 +23,9 @@ nav_order: 5
     </div>
     <h6 class="font-italic mt-2 mt-sm-0">Fall 2024</h6>
     <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">Class Information: This course will cover core topics in data mining and their applications. The topics covered include classification, association, clustering, and anomaly detection. The course aims at helping the students understand different techniques that can be applied for different problems and their limitations, evaluate the results and select the appropriate methods when faced with a new problem. It will give students hands-on experience applying those techniques by implementing a complete solution using one or more data mining software packages.</li> 
       <li class="list-group-item">Syllabus: <a href="">PDF</a></li> 
     </ul>
   </div>
 </div>
-
+</a>
