@@ -8,7 +8,7 @@ nav_order: 5
 ---
 
 <!-- Fall 2024 CSE801B -->
-<a href="_teaching/24F-CSE801B.md" class="text-decoration-none">
+<a href="/_teaching/24F-CSE801B.md" class="text-decoration-none">
 <div class="card mt-3">
   <div class="p-3">
     <div class="row">
