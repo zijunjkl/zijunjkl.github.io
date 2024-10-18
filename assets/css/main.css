@@ -7,7 +7,7 @@
  ******************************************************************************/
 :root {
   --global-bg-color: #ffffff;
-  --global-code-bg-color: lighten($purple-color, 50%);
+  --global-code-bg-color: #ffffff;
   --global-text-color: #000000;
   --global-text-color-light: #828282;
   --global-theme-color: #008208;
