@@ -9,19 +9,42 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         header {
             text-align: center;
             padding: 20px;
             background-color: #ffffff;
+            width: 100%;
         }
         header img {
-            width: 500px;
+            width: 400px;
             height:auto;
         }
-        section {
+        .content-wrapper {
+            display: flex;
+            width: 80%;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 150px;
             padding: 20px;
-            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .sidebar a {
+            display: block;
+            color: #0073e6;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
         }
         .section-title {
             font-size: 1.5em;
@@ -36,22 +59,50 @@
     <img src="../assets/img/Lab-logo.png" alt="DominoAI Lab Logo">
 </header>
 
-<section id="people">
-    <h2 class="section-title">People</h2>
-    <h3>Director</h3>
-    <p>Dr. Zijun Cui</p>
-    <p>Assistant Professor, Michigan State University, Department of Computer Science and Engineering</p>
-</section>
+<div class="content-wrapper">
+    <!-- 左侧导航栏 -->
+    <nav class="sidebar">
+        <a href="#people">People</a>
+        <a href="#research">Research</a>
+        <a href="#opening">Opening</a>
+    </nav>
+    
+    <div class="content">
+        <section id="people">
+            <h2 class="section-title">People</h2>
+            <ul>
+                <li>Faculty
+                    <ul>
+                        <li>Zijun Cui</li>
+                    </ul>
+                </li>
+                <li>Post-doc
+                    <ul>
+                        <li>Currently no members.</li>
+                    </ul>
+                </li>
+                <li>PhD
+                    <ul>
+                        <li>Currently no members.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
+        <section id="research">
+        <h2 class="section-title">Research</h2>
+        <p>We focus on advancing AI by leveraging domain knowledge. The research areas focus on computer vision, probabilistic graphical models, and AI for health. Explore our latest research projects below:</p>
+        <ul>
+            <li>Physics-informed 3D Computer Vision for Human Behavior Analysis</li>
+            <li>Computer Vision for Health</li>
+            <li>Research Project 3: Title and brief description.</li>
+        </ul>
+        </section>
 
-<section id="research">
-    <h2 class="section-title">Research</h2>
-    <p>We focus on advancing AI by leveraging domain knowledge. The research areas focus on computer vision, probabilistic graphical models, and AI for health. On-going projects include:</p>
-    <ul>
-        <li>Physics-informed 3D Computer Vision for Human Behavior Analysis</li>
-        <li>Computer Vision for Health</li>
-    </ul>
-</section>
+        <section id="opening">
+            <h2 class="section-title">Opening</h2>
+            <p>We have openings for Ph.D. students starting Fall 2025. The ideal applicant is highly motivated and has strong skills in both mathematics and programming. </p>
+        </section>
 
 </body>
 </html>
