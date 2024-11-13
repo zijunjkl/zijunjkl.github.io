@@ -32,29 +32,14 @@
     - title: Postdoctoral Research Fellow 
       institution: University of Southern California
       year: 2023 - 2024
-      description:
-        - Developing sophisticated algorithms for physics-informed deep learning using causal models and physical information.
-        - Exploring their applications in time-series forecasting, urban transportation, and health applications.
       
     - title: Research Assistant
       institution: Rensselaer Polytechnic Institute
       year: 2017 - 2022
-      description:
-        - Developed advanced knowledge-augmented deep learning algorithms with diverse types of domain knowledge such as biomechanics and mathematical theorems, and explored their applications in computer vision tasks.
-        - Developed efficient and accurate learning and inference algorithms on probabilistic graphical models and explored their applications in computer vision tasks.
     
     - title: Visiting Research Scholar
       institution: IBM Thomas J.Watson Research Center
       year: 2019
-      description: Developed an effective knowledge-augmented deep learning algorithm for the knowledge graph completion task
-      
-      
-    - title: Project Member
-      institution: Data-Driven Discovery of Models, Defense Advanced Research Projects Agency
-      year: 2017 - 2019
-      description: 
-        - Developed robust structure learning algorithms through Bayesian approaches under insufficient data.
-        - Contributed and maintained primitives in the D3M AutoML Ecosystem.
 
 
 
