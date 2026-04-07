@@ -15,44 +15,66 @@
     nav ul a { font-size: 14px; color: #555; }
     nav ul a.active { color: #1a5fa8; font-weight: 600; }
     .container { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
-    h1 { font-size: 24px; font-weight: 600; margin-bottom: 0.2rem; }
-    .lab-subtitle { font-size: 14px; color: #888; margin-bottom: 1.2rem; }
+ 
+    /* ── Lab title ── */
+    .lab-title {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      margin-bottom: 0.2rem;
+    }
+    .lab-title .domi { color: #1a5fa8; }   /* blue  — domain */
+    .lab-title .no   { color: #e07b2a; }   /* orange — knowledge */
+    .lab-title .ai   { color: #2a9e5c; }   /* green  — AI */
+    .lab-title .rest { color: #222; }
+ 
+    .lab-legend {
+      display: flex;
+      gap: 1.2rem;
+      margin-bottom: 0.4rem;
+      flex-wrap: wrap;
+    }
+    .lab-legend span {
+      font-size: 12px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+ 
+    .lab-subtitle { font-size: 14px; color: #888; margin-bottom: 1.5rem; }
+ 
     h2 { font-size: 17px; font-weight: 600; border-bottom: 1.5px solid #e0e0e0; padding-bottom: 0.3rem; margin-bottom: 1.2rem; }
     section { margin-bottom: 2.5rem; }
     p { font-size: 15px; margin-bottom: 0.8rem; }
     .recruiting { background: #fffbea; border-left: 3px solid #f0b429; padding: 0.6rem 0.8rem; border-radius: 0 4px 4px 0; font-size: 15px; margin: 1.5rem 0; }
  
-    .student-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
- 
-    /* Clickable card */
-    a.student-card {
-      display: block;
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      padding: 1rem 1.1rem;
-      color: inherit;
-      transition: border-color 0.15s, box-shadow 0.15s;
-    }
-    a.student-card:hover {
-      border-color: #1a5fa8;
-      box-shadow: 0 2px 8px rgba(26,95,168,0.08);
-      text-decoration: none;
-    }
- 
-    /* Non-clickable card */
-    div.student-card {
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      padding: 1rem 1.1rem;
-    }
- 
-    .sname { font-weight: 600; font-size: 15px; margin-bottom: 2px; }
-    .srole { font-size: 13px; color: #555; }
-    .stopic { font-size: 13px; color: #666; margin-top: 4px; font-style: italic; }
-    .smeta { font-size: 12px; color: #999; margin-top: 4px; }
+    .student-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+    a.student-card, div.student-card { display: block; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; color: inherit; }
+    a.student-card { transition: border-color 0.15s, box-shadow 0.15s; }
+    a.student-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.08); text-decoration: none; }
+    .card-photo { width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: top; display: block; background: #f0f0f0; }
+    .card-avatar { width: 100%; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 600; color: #fff; }
+    .card-body { padding: 0.75rem 0.9rem; }
+    .sname { font-weight: 600; font-size: 14px; margin-bottom: 1px; }
+    .srole { font-size: 12px; color: #555; }
+    .stopic { font-size: 12px; color: #666; margin-top: 3px; font-style: italic; }
+    .smeta { font-size: 11px; color: #999; margin-top: 3px; }
  
     footer { text-align: center; font-size: 13px; color: #aaa; padding: 2rem 0 1.5rem; border-top: 1px solid #eee; }
-    @media (max-width: 600px) { nav ul { gap: 0.6rem; } nav ul a { font-size: 12px; } .student-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) {
+      .lab-title { font-size: 30px; }
+      nav ul { gap: 0.6rem; } nav ul a { font-size: 12px; }
+      .student-grid { grid-template-columns: repeat(2, 1fr); }
+    }
   </style>
 </head>
 <body>
@@ -67,8 +89,15 @@
 </nav>
 <div class="container">
  
-  <h1>DominoAI Lab</h1>
-  <div class="lab-subtitle">Domain Knowledge + AI &nbsp;·&nbsp; Michigan State University</div>
+  <div class="lab-title">
+    <span class="domi">Domi</span><span class="no">no</span><span class="ai">AI</span><span class="rest"> Lab</span>
+  </div>
+  <div class="lab-legend">
+    <span><span style="color:#1a5fa8;">Domain</span> 
+    <span><span style="color:#e07b2a;">Knowledge</span>
+    <span><span style="color:#2a9e5c;">Artificial Intelligence</span>
+  </div>
+  <div class="lab-subtitle">Michigan State University · Department of Computer Science and Engineering</div>
  
   <section>
     <p>
