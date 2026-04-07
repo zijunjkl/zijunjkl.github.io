@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lab — Zijun Cui</title>
+  <title>DominoAI Lab — Zijun Cui</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 16px; line-height: 1.7; color: #222; background: #fff; }
@@ -15,17 +15,44 @@
     nav ul a { font-size: 14px; color: #555; }
     nav ul a.active { color: #1a5fa8; font-weight: 600; }
     .container { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
-    h1 { font-size: 22px; font-weight: 600; margin-bottom: 0.5rem; }
-    h2 { font-size: 17px; font-weight: 600; border-bottom: 1.5px solid #e0e0e0; padding-bottom: 0.3rem; margin-bottom: 1rem; }
+    h1 { font-size: 24px; font-weight: 600; margin-bottom: 0.2rem; }
+    .lab-subtitle { font-size: 14px; color: #888; margin-bottom: 1.2rem; }
+    h2 { font-size: 17px; font-weight: 600; border-bottom: 1.5px solid #e0e0e0; padding-bottom: 0.3rem; margin-bottom: 1.2rem; }
     section { margin-bottom: 2.5rem; }
+    p { font-size: 15px; margin-bottom: 0.8rem; }
     .recruiting { background: #fffbea; border-left: 3px solid #f0b429; padding: 0.6rem 0.8rem; border-radius: 0 4px 4px 0; font-size: 15px; margin: 1.5rem 0; }
-    .students { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
-    .student-card { border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem; font-size: 14px; }
-    .student-card .sname { font-weight: 600; font-size: 15px; }
-    .student-card .srole { color: #666; font-size: 13px; }
-    .student-card .sinfo { color: #888; font-size: 13px; }
+ 
+    .student-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+ 
+    /* Clickable card */
+    a.student-card {
+      display: block;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1rem 1.1rem;
+      color: inherit;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    a.student-card:hover {
+      border-color: #1a5fa8;
+      box-shadow: 0 2px 8px rgba(26,95,168,0.08);
+      text-decoration: none;
+    }
+ 
+    /* Non-clickable card */
+    div.student-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1rem 1.1rem;
+    }
+ 
+    .sname { font-weight: 600; font-size: 15px; margin-bottom: 2px; }
+    .srole { font-size: 13px; color: #555; }
+    .stopic { font-size: 13px; color: #666; margin-top: 4px; font-style: italic; }
+    .smeta { font-size: 12px; color: #999; margin-top: 4px; }
+ 
     footer { text-align: center; font-size: 13px; color: #aaa; padding: 2rem 0 1.5rem; border-top: 1px solid #eee; }
-    @media (max-width: 600px) { nav ul { gap: 0.6rem; } nav ul a { font-size: 12px; } }
+    @media (max-width: 600px) { nav ul { gap: 0.6rem; } nav ul a { font-size: 12px; } .student-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -39,65 +66,81 @@
   </ul>
 </nav>
 <div class="container">
-  <h1>Lab</h1>
-  <p style="font-size:15px;margin-bottom:1rem;">
-    Our lab works on knowledge-augmented deep learning, probabilistic graphical models, computer vision, and AI for health.
-    We are part of the <a href="https://engineering.msu.edu/about/departments/cse">Department of Computer Science and Engineering at Michigan State University</a>.
-  </p>
-
-  <div class="recruiting">
-    We are actively recruiting PhD students as well as research interns.
-    Please send your CV and a short statement of interest to <a href="mailto:cuizijun@msu.edu">cuizijun@msu.edu</a>.
-  </div>
-
+ 
+  <h1>DominoAI Lab</h1>
+  <div class="lab-subtitle">Domain Knowledge + AI &nbsp;·&nbsp; Michigan State University</div>
+ 
+  <section>
+    <p>
+      The DominoAI Lab studies how to incorporate domain knowledge, from physics, causality, and symbolic reasoning, into deep learning systems to make them more data-efficient, interpretable, and reliable. Our work spans knowledge-augmented deep learning, probabilistic graphical models, computer vision, and AI for health.
+    </p>
+    <div class="recruiting">
+      We are actively recruiting PhD students and research interns. If you are interested in joining the lab, please send your CV and a brief statement of interest to <a href="mailto:cuizijun@msu.edu">cuizijun@msu.edu</a>.
+    </div>
+  </section>
+ 
   <section>
     <h2>PhD Students</h2>
-    <div class="students">
-      <div class="student-card">
+    <div class="student-grid">
+ 
+      <a class="student-card" href="https://elkhanzada.github.io/" target="_blank">
         <div class="sname">Elkhan Ismayilzada</div>
         <div class="srole">PhD Student</div>
-        <div class="sinfo">Joined Fall 2024</div>
-      </div>
-      <div class="student-card">
+        <div class="smeta">Joined Fall 2024</div>
+      </a>
+ 
+      <a class="student-card" href="https://kwonjoon.info/" target="_blank">
         <div class="sname">Joonwoo Kwon</div>
         <div class="srole">PhD Student</div>
-        <div class="sinfo">Joined Fall 2025</div>
-      </div>
-      <div class="student-card">
+        <div class="smeta">Joined Fall 2025</div>
+      </a>
+ 
+      <a class="student-card" href="https://samiashashmi.github.io/" target="_blank">
         <div class="sname">Samia Islam</div>
         <div class="srole">PhD Student (Co-advising)</div>
-      </div>
+      </a>
+ 
       <div class="student-card">
         <div class="sname">Tianchen Wang</div>
         <div class="srole">PhD Student</div>
-        <div class="sinfo">Fall 2026</div>
+        <div class="smeta">Joining Fall 2026</div>
       </div>
+ 
     </div>
   </section>
-
-  <h2>Undergraduate Students</h2>
-    <div class="students">
+ 
+  <section>
+    <h2>Undergraduate Students</h2>
+    <div class="student-grid">
+ 
       <div class="student-card">
         <div class="sname">Hoang Le</div>
-        <div class="sinfo">Joined Spring 2025</div>
+        <div class="srole">Undergraduate Researcher</div>
+        <div class="smeta">Joined Spring 2025</div>
       </div>
+ 
     </div>
   </section>
-  
+ 
   <section>
     <h2>Research Interns</h2>
-    <div class="student-card">
+    <div class="student-grid">
+ 
+      <div class="student-card">
         <div class="sname">Yinghuan Zhang</div>
-        <div class="srole">Master</div>
-        <div class="sinfo">Summer 2024</div>
+        <div class="srole">Research Intern (Master's)</div>
+        <div class="smeta">Summer 2024</div>
       </div>
-    <div class="student-card">
+ 
+      <div class="student-card">
         <div class="sname">Yiran Ding</div>
-        <div class="srole">Master</div>
-        <div class="sinfo">Summer 2025</div>
+        <div class="srole">Research Intern (Master's)</div>
+        <div class="smeta">Summer 2025</div>
       </div>
+ 
+    </div>
   </section>
-
+ 
 </div>
 <footer>&copy; 2026 Zijun Cui · Michigan State University</footer>
 </body>
