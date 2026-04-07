@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab — Zijun Cui</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 16px; line-height: 1.7; color: #222; background: #fff; }
+    a { color: #1a5fa8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { border-bottom: 1px solid #e0e0e0; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; background: #fff; z-index: 10; }
+    nav .site-name { font-weight: 600; font-size: 15px; color: #222; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav ul a { font-size: 14px; color: #555; }
+    nav ul a.active { color: #1a5fa8; font-weight: 600; }
+    .container { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 0.5rem; }
+    h2 { font-size: 17px; font-weight: 600; border-bottom: 1.5px solid #e0e0e0; padding-bottom: 0.3rem; margin-bottom: 1rem; }
+    section { margin-bottom: 2.5rem; }
+    .recruiting { background: #fffbea; border-left: 3px solid #f0b429; padding: 0.6rem 0.8rem; border-radius: 0 4px 4px 0; font-size: 15px; margin: 1.5rem 0; }
+    .students { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+    .student-card { border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem; font-size: 14px; }
+    .student-card .sname { font-weight: 600; font-size: 15px; }
+    .student-card .srole { color: #666; font-size: 13px; }
+    .student-card .sinfo { color: #888; font-size: 13px; }
+    footer { text-align: center; font-size: 13px; color: #aaa; padding: 2rem 0 1.5rem; border-top: 1px solid #eee; }
+    @media (max-width: 600px) { nav ul { gap: 0.6rem; } nav ul a { font-size: 12px; } }
+  </style>
+</head>
+<body>
+<nav>
+  <span class="site-name">Zijun Cui</span>
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li><a href="lab.html" class="active">Lab</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="assets/pdf/cv.pdf" target="_blank">CV</a></li>
+  </ul>
+</nav>
+<div class="container">
+  <h1>Lab</h1>
+  <p style="font-size:15px;margin-bottom:1rem;">
+    Our lab works on knowledge-augmented deep learning, probabilistic graphical models, computer vision, and AI for health.
+    We are part of the <a href="https://engineering.msu.edu/about/departments/cse">Department of Computer Science and Engineering at Michigan State University</a>.
+  </p>
+
+  <div class="recruiting">
+    We are actively recruiting PhD students for Spring and Fall 2026, as well as research interns.
+    Please send your CV and a short statement of interest to <a href="mailto:cuizijun@msu.edu">cuizijun@msu.edu</a>.
+  </div>
+
+  <section>
+    <h2>PhD Students</h2>
+    <div class="students">
+      <!-- Add students using this format:
+      <div class="student-card">
+        <div class="sname">Student Name</div>
+        <div class="srole">PhD Student</div>
+        <div class="sinfo">Joined Fall 2024</div>
+      </div>
+      -->
+      <div class="student-card">
+        <div class="sname">Coming soon</div>
+        <div class="srole">PhD Student</div>
+        <div class="sinfo">Fall 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research Interns</h2>
+    <div class="students">
+      <!-- Add interns here -->
+      <p style="font-size:14px;color:#888;">No current interns listed.</p>
+    </div>
+  </section>
+
+</div>
+<footer>&copy; 2026 Zijun Cui · Michigan State University</footer>
+</body>
+</html>

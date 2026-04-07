@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Zijun Cui</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 16px; line-height: 1.7; color: #222; background: #fff; }
+    a { color: #1a5fa8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { border-bottom: 1px solid #e0e0e0; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; background: #fff; z-index: 10; }
+    nav .site-name { font-weight: 600; font-size: 15px; color: #222; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav ul a { font-size: 14px; color: #555; }
+    nav ul a.active { color: #1a5fa8; font-weight: 600; }
+    .container { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 1.5rem; }
+    .post-entry { border-bottom: 1px solid #f0f0f0; padding: 1.2rem 0; }
+    .post-entry:last-child { border-bottom: none; }
+    .post-date { font-size: 13px; color: #999; margin-bottom: 0.2rem; }
+    .post-title { font-size: 17px; font-weight: 600; }
+    .post-excerpt { font-size: 14px; color: #555; margin-top: 0.3rem; }
+    .empty { color: #aaa; font-size: 15px; margin-top: 2rem; }
+    footer { text-align: center; font-size: 13px; color: #aaa; padding: 2rem 0 1.5rem; border-top: 1px solid #eee; }
+    @media (max-width: 600px) { nav ul { gap: 0.6rem; } nav ul a { font-size: 12px; } }
+  </style>
+</head>
+<body>
+<nav>
+  <span class="site-name">Zijun Cui</span>
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li><a href="lab.html">Lab</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="assets/pdf/cv.pdf" target="_blank">CV</a></li>
+  </ul>
+</nav>
+<div class="container">
+  <h1>Blog</h1>
+
+  <!-- When you write a post, create a file like posts/2026-04-my-title.html
+       and add an entry here like this:
+
+  <div class="post-entry">
+    <div class="post-date">April 7, 2026</div>
+    <div class="post-title"><a href="posts/2026-04-my-title.html">My Post Title</a></div>
+    <div class="post-excerpt">A short description of what the post is about.</div>
+  </div>
+
+  -->
+
+  <p class="empty">No posts yet — check back soon.</p>
+
+</div>
+<footer>&copy; 2026 Zijun Cui · Michigan State University</footer>
+</body>
+</html>
