@@ -4,377 +4,134 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Teaching — Zijun Cui</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
-    :root {
-      --bg:        #fafaf8;
-      --text:      #1a1a18;
-      --muted:     #6b6b65;
-      --accent:    #18532b; /* MSU green */
-      --border:    #e2e2dc;
-      --card-bg:   #ffffff;
-      --tag-bg:    #f0f4f1;
-      --tag-text:  #2a5c3a;
-    }
- 
-    html { font-size: 17px; scroll-behavior: smooth; }
- 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Source Sans 3', sans-serif;
-      font-weight: 300;
-      line-height: 1.65;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
- 
-    /* ── NAV ── */
-    header {
-      padding: 2rem 0 1.5rem;
-      border-bottom: 1px solid var(--border);
-    }
- 
-    nav {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      display: flex;
-      align-items: baseline;
-      gap: 2.5rem;
-      flex-wrap: wrap;
-    }
- 
-    .nav-name {
-      font-family: 'Source Serif 4', serif;
-      font-weight: 400;
-      font-size: 1.1rem;
-      color: var(--text);
-      text-decoration: none;
-      margin-right: auto;
-    }
- 
-    nav a {
-      font-size: 0.88rem;
-      font-weight: 400;
-      color: var(--muted);
-      text-decoration: none;
-      letter-spacing: 0.01em;
-      transition: color 0.15s;
-    }
- 
-    nav a:hover, nav a.active { color: var(--accent); }
- 
-    /* ── MAIN ── */
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 3.5rem 2rem 5rem;
-      flex: 1;
-    }
- 
-    h1 {
-      font-family: 'Source Serif 4', serif;
-      font-size: 2rem;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-      margin-bottom: 2.8rem;
-    }
- 
-    /* ── SECTION ── */
-    .section-label {
-      font-size: 0.78rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 1.2rem;
-    }
- 
-    /* ── OFFICE HOURS ── */
-    .info-band {
-      display: flex;
-      gap: 2.5rem;
-      flex-wrap: wrap;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.4rem 1.8rem;
-      margin-bottom: 3.2rem;
-    }
- 
-    .info-item { flex: 1; min-width: 180px; }
- 
-    .info-label {
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 0.3rem;
-    }
- 
-    .info-value {
-      font-size: 0.94rem;
-      color: var(--text);
-      line-height: 1.5;
-    }
- 
-    .info-value a {
-      color: var(--accent);
-      text-decoration: none;
-    }
- 
-    .info-value a:hover { text-decoration: underline; }
- 
-    /* ── COURSE CARDS ── */
-    .institution {
-      font-family: 'Source Serif 4', serif;
-      font-size: 1.3rem;
-      font-weight: 400;
-      margin-bottom: 1.5rem;
-    }
- 
-    .courses { display: flex; flex-direction: column; gap: 1.4rem; margin-bottom: 4rem; }
- 
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.6rem 1.8rem;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
- 
-    .card:hover {
-      border-color: #b8c9bc;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-    }
- 
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 1rem;
-      margin-bottom: 0.8rem;
-      flex-wrap: wrap;
-    }
- 
-    .course-id {
-      font-size: 0.78rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
- 
-    .course-semesters {
-      font-size: 0.82rem;
-      color: var(--muted);
-      white-space: nowrap;
-    }
- 
-    .course-title {
-      font-family: 'Source Serif 4', serif;
-      font-size: 1.15rem;
-      font-weight: 400;
-      margin-bottom: 0.7rem;
-      line-height: 1.3;
-    }
- 
-    .course-desc {
-      font-size: 0.9rem;
-      color: #444;
-      line-height: 1.7;
-      margin-bottom: 1.1rem;
-    }
- 
-    .topics {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.45rem;
-      margin-bottom: 1.2rem;
-    }
- 
-    .tag {
-      background: var(--tag-bg);
-      color: var(--tag-text);
-      font-size: 0.76rem;
-      font-weight: 400;
-      padding: 0.22em 0.7em;
-      border-radius: 4px;
-      letter-spacing: 0.01em;
-    }
- 
-    .card-links {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      border-top: 1px solid var(--border);
-      padding-top: 1rem;
-    }
- 
-    .card-link {
-      font-size: 0.84rem;
-      color: var(--accent);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 0.3em;
-      transition: opacity 0.15s;
-    }
- 
-    .card-link:hover { opacity: 0.7; }
- 
-    .card-link svg {
-      width: 13px;
-      height: 13px;
-      flex-shrink: 0;
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
- 
-    /* ── FOOTER ── */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 1.4rem 2rem;
-      text-align: center;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
- 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 16px; line-height: 1.7; color: #222; background: #fff; }
+    a { color: #0d9488; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { border-bottom: 1px solid #e0e0e0; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; background: #fff; z-index: 10; }
+    nav .site-name { font-weight: 600; font-size: 15px; color: #222; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav ul a { font-size: 14px; color: #555; }
+    nav ul a.active { color: #0d9488; font-weight: 600; }
+    .container { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    h2 { font-size: 17px; font-weight: 600; border-bottom: 1.5px solid #e0e0e0; padding-bottom: 0.3rem; margin-bottom: 1rem; }
+    section { margin-bottom: 2.5rem; }
+    footer { text-align: center; font-size: 13px; color: #aaa; padding: 2rem 0 1.5rem; border-top: 1px solid #eee; }
+
+    /* ── Student Resources ── */
+    .info-band { display: flex; flex-wrap: wrap; gap: 1.5rem; background: #f9f9f9; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.1rem 1.4rem; }
+    .info-item { min-width: 160px; }
+    .info-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: #888; margin-bottom: 0.2rem; }
+    .info-value { font-size: 14px; color: #333; line-height: 1.5; }
+
+    /* ── Course cards ── */
+    .course-list { display: flex; flex-direction: column; gap: 1rem; }
+    .card { border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.2rem 1.4rem; }
+    .card-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.3rem; }
+    .course-id { font-size: 12px; font-weight: 600; color: #0d9488; letter-spacing: 0.05em; text-transform: uppercase; }
+    .course-sem { font-size: 13px; color: #888; }
+    .course-title { font-size: 16px; font-weight: 600; color: #222; margin-bottom: 0.5rem; }
+    .course-desc { font-size: 14px; color: #555; margin-bottom: 0.85rem; line-height: 1.65; }
+    .topics { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.9rem; }
+    .tag { font-size: 12px; background: #e6f7f5; color: #0d9488; border: 1px solid #b2e8e3; border-radius: 20px; padding: 2px 10px; }
+    .card-links { display: flex; flex-wrap: wrap; gap: 1rem; border-top: 1px solid #f0f0f0; padding-top: 0.75rem; }
+    .card-link { font-size: 13px; color: #0d9488; display: flex; align-items: center; gap: 0.3em; }
+    .card-link:hover { text-decoration: underline; }
+    .card-link svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
     @media (max-width: 600px) {
-      .card-header { flex-direction: column; gap: 0.3rem; }
-      .info-band { flex-direction: column; gap: 1.2rem; }
+      nav ul { gap: 0.6rem; } nav ul a { font-size: 12px; }
+      .card-top { flex-direction: column; gap: 0.1rem; }
+      .info-band { flex-direction: column; gap: 1rem; }
     }
   </style>
 </head>
 <body>
- 
-<header>
-  <nav>
-    <a href="index.html" class="nav-name">Zijun Cui</a>
-    <a href="index.html">About</a>
-    <a href="publications.html">Publications</a>
-    <a href="teaching.html" class="active">Teaching</a>
-    <a href="lab.html">Lab</a>
-  </nav>
-</header>
- 
-<main>
-  <h1>Teaching</h1>
- 
-  <!-- ── OFFICE HOURS & CONTACT ── -->
-  <p class="section-label">Student Resources</p>
-  <div class="info-band">
-    <div class="info-item">
-      <div class="info-label">Office Hours</div>
-      <div class="info-value">Thuesday/Thursday after class<br />or by appointment</div>
-    </div>
-    <div class="info-item">
-      <div class="info-label">Location</div>
-      <div class="info-value">Engineering Building<br />Room 2212, MSU</div>
-    </div>
-    <div class="info-item">
-      <div class="info-label">Contact</div>
-      <div class="info-value"><a href="mailto:cuizijun@msu.edu">cuizijun@msu.edu</a></div>
-    </div>
-    <div class="info-item">
-      <div class="info-label">Course Platform</div>
-      <div class="info-value"><a href="https://d2l.msu.edu" target="_blank">D2L Brightspace ↗</a></div>
-    </div>
-  </div>
- 
-  <!-- ── COURSES ── -->
-  <p class="section-label">Michigan State University</p>
- 
-  <div class="courses">
- 
-    <!-- CSE 801B -->
-    <div class="card">
-      <div class="card-header">
-        <span class="course-id">CSE 801B</span>
-        <span class="course-semesters">Fall 2024</span>
+
+<nav>
+  <span class="site-name">Zijun Cui</span>
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="teaching.html" class="active">Teaching</a></li>
+    <li><a href="lab.html">Lab</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <section>
+    <h2>Student Resources</h2>
+    <div class="info-band">
+      <div class="info-item">
+        <div class="info-label">Office Hours</div>
+        <div class="info-value">Tue/Thu after class or by appointment</div>
       </div>
-      <div class="course-title">Introduction to Data Mining</div>
-      <p class="course-desc">
-        An introduction to the core principles and algorithms behind discovering patterns in large datasets.
-        Students learn to formulate data mining problems, select appropriate methods, and critically evaluate results.
-        The course balances theory with hands-on implementation in Python.
-      </p>
-      <div class="topics">
-        <span class="tag">Data preprocessing</span>
-        <span class="tag">Classification</span>
-        <span class="tag">Clustering</span>
-        <span class="tag">Association rules</span>
-        <span class="tag">Dimensionality reduction</span>
-        <span class="tag">Evaluation & validation</span>
+      <div class="info-item">
+        <div class="info-label">Location</div>
+        <div class="info-value">Engineering Building 2212</div>
       </div>
-      <div class="card-links">
-        <a class="card-link" href="#" target="_blank">
-          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          Syllabus
-        </a>
-        <a class="card-link" href="https://d2l.msu.edu" target="_blank">
-          <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          Course materials (D2L)
-        </a>
-        <a class="card-link" href="#" target="_blank">
-          <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          Code repository
-        </a>
+      <div class="info-item">
+        <div class="info-label">Email</div>
+        <div class="info-value"><a href="mailto:cuizijun@msu.edu">cuizijun@msu.edu</a></div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Course Platform</div>
+        <div class="info-value"><a href="https://d2l.msu.edu" target="_blank">D2L Brightspace</a></div>
       </div>
     </div>
- 
-    <!-- CSE 849 -->
-    <div class="card">
-      <div class="card-header">
-        <span class="course-id">CSE 849</span>
-        <span class="course-semesters">Spring 2025 · Spring 2026</span>
+  </section>
+
+  <section>
+    <h2>Michigan State University</h2>
+    <div class="course-list">
+
+      <!-- CSE 801B -->
+      <div class="card">
+        <div class="card-top">
+          <span class="course-id">CSE 801B</span>
+          <span class="course-sem">Fall 2024</span>
+        </div>
+        <div class="course-title">Introduction to Data Mining</div>
+        <div class="course-desc">
+          This course will cover core topics in data mining and their applications. The topics covered include classification, association, clustering, and anomaly detection. The course aims at helping the students understand different techniques that can be applied for different problems and their limitations, evaluate the results and select the appropriate methods when faced with a new problem. It will give students hands-on experience applying those techniques by implementing a complete solution using one or more data mining software packages.
+        </div>
+        <div class="card-links">
+          <a class="card-link" href="/assets/pdf/syllabus_fs24.pdf" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Syllabus
+          </a>
+        </div>
       </div>
-      <div class="course-title">Deep Learning</div>
-      <p class="course-desc">
-        A graduate-level course covering the theory and practice of modern deep learning.
-        Topics span from foundational neural network concepts to cutting-edge architectures.
-        Students complete a substantial research project applying deep learning to a problem of their choice.
-      </p>
-      <div class="topics">
-        <span class="tag">Neural networks</span>
-        <span class="tag">Optimization</span>
-        <span class="tag">CNNs</span>
-        <span class="tag">Transformers</span>
-        <span class="tag">Generative models</span>
-        <span class="tag">Graph neural networks</span>
-        <span class="tag">Self-supervised learning</span>
+
+      <!-- CSE 849 -->
+      <div class="card">
+        <div class="card-top">
+          <span class="course-id">CSE 849</span>
+          <span class="course-sem">Spring 2025 · Spring 2026</span>
+        </div>
+        <div class="course-title">Deep Learning</div>
+        <div class="course-desc">
+          This course provides a comprehensive introduction to deep neural networks. Major topics include multilayer perceptrons, convolutional neural networks, practical aspects of model creation from scratch and training, sequence modeling with recurrent neural networks and transformers, and generative probabilistic modeling. Advanced topics, including Bayesian deep learning, will also be explored. Students will learn basic concepts of deep learning and hands-on experience to solve real-word problems. This course requires a strong background in linear algebra, probability and statistics, and machine learning. Python will be used for all the assignments. Proficiency in Python or being able to quickly learn it is required.
+        </div>
+        <div class="card-links">
+          <a class="card-link" href="/assets/pdf/syllabus_Ss26 v2.pdf" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Syllabus
+          </a>
+          <a class="card-link" href="https://piazza.com/msu/spring2026/cse849/home" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Piazza
+          </a>
+        </div>
       </div>
-      <div class="card-links">
-        <a class="card-link" href="#" target="_blank">
-          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          Syllabus
-        </a>
-        <a class="card-link" href="https://d2l.msu.edu" target="_blank">
-          <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          Course materials (D2L)
-        </a>
-      </div>
+
     </div>
- 
-  </div>
-</main>
- 
-<footer>
-  © 2026 Zijun Cui · Michigan State University
-</footer>
- 
-</body>
-</html>
+  </section>
+
+</div>
+
 <footer>&copy; 2026 Zijun Cui · Michigan State University</footer>
 </body>
 </html>
