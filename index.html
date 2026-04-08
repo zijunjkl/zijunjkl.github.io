@@ -17,27 +17,68 @@
     .container { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
     h2 { font-size: 17px; font-weight: 600; border-bottom: 1.5px solid #e0e0e0; padding-bottom: 0.3rem; margin-bottom: 1rem; }
     section { margin-bottom: 2.5rem; }
+ 
+    /* ── Profile ── */
     .profile { display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2.5rem; }
-    .profile img { width: 160px; height: 200px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
-    .profile h1 { font-size: 22px; font-weight: 600; margin-bottom: 0.3rem; }
+    .profile img {
+      width: 180px;
+      height: 220px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 10px;
+      flex-shrink: 0;
+      border: 3px solid #f0f0f0;
+    }
+    .profile h1 { font-size: 24px; font-weight: 700; margin-bottom: 0.2rem; }
+    .profile .role { font-size: 14px; color: #555; margin-bottom: 0.6rem; }
+    .profile .email { font-size: 14px; margin-bottom: 0.75rem; }
+ 
+    /* ── Link buttons with color ── */
     .links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.6rem 0 1rem; }
-    .links a { font-size: 13px; border: 1px solid #ccc; border-radius: 4px; padding: 2px 10px; color: #333; }
-    .links a:hover { border-color: #6b8cba; color: #6b8cba; text-decoration: none; }
-    .recruiting { background: #fffbea; border-left: 3px solid #f0b429; padding: 0.6rem 0.8rem; border-radius: 0 4px 4px 0; font-size: 15px; margin-top: 0.75rem; }
+    .links a {
+      font-size: 13px;
+      border-radius: 20px;
+      padding: 3px 14px;
+      font-weight: 500;
+      transition: opacity 0.15s;
+    }
+    .links a:hover { opacity: 0.85; text-decoration: none; }
+    .links a.lk-linkedin  { background: #e8f0fb; color: #3b6cb7; border: 1px solid #c5d6f0; }
+    .links a.lk-twitter   { background: #e8f5fd; color: #2a8ab4; border: 1px solid #b8dff0; }
+    .links a.lk-github    { background: #f0eff8; color: #5a4fa0; border: 1px solid #ccc8e8; }
+    .links a.lk-scholar   { background: #fef3e8; color: #c47a2a; border: 1px solid #f0d0a0; }
+    .links a.lk-cv        { background: #edf7f0; color: #2a8a56; border: 1px solid #a8d8b8; }
+ 
+    /* ── Bio intro ── */
+    .bio { font-size: 15px; margin-bottom: 0.75rem; }
+    .bio-vision {
+      font-size: 15px;
+      color: #444;
+      background: #f8f6ff;
+      border-left: 3px solid #b0a0e0;
+      padding: 0.6rem 0.9rem;
+      border-radius: 0 6px 6px 0;
+      margin-top: 0.75rem;
+      font-style: italic;
+    }
+ 
+    /* ── News ── */
+    .news-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .news-table td { padding: 6px 8px; vertical-align: top; border-bottom: 1px solid #f0f0f0; }
+    .news-table td:first-child { white-space: nowrap; color: #888; width: 60px; }
+    .venue-tag { display: inline-block; font-size: 11px; font-weight: 600; background: #6b8cba; color: #fff; border-radius: 3px; padding: 1px 6px; margin-right: 5px; vertical-align: middle; }
+ 
     ul.plain { padding-left: 1.3rem; }
     ul.plain li { margin-bottom: 0.2rem; font-size: 15px; }
     ul.edu { list-style: none; padding: 0; }
     ul.edu li { font-size: 15px; margin-bottom: 0.25rem; padding-left: 1rem; position: relative; }
     ul.edu li::before { content: "▸"; position: absolute; left: 0; color: #999; font-size: 11px; top: 5px; }
-    .news-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    .news-table td { padding: 6px 8px; vertical-align: top; border-bottom: 1px solid #f0f0f0; }
-    .news-table td:first-child { white-space: nowrap; color: #888; width: 100px; }
+ 
     footer { text-align: center; font-size: 13px; color: #aaa; padding: 2rem 0 1.5rem; border-top: 1px solid #eee; }
     @media (max-width: 600px) {
       .profile { flex-direction: column; align-items: center; text-align: center; }
       .links { justify-content: center; }
-      nav ul { gap: 0.6rem; }
-      nav ul a { font-size: 12px; }
+      nav ul { gap: 0.6rem; } nav ul a { font-size: 12px; }
     }
   </style>
 </head>
@@ -52,22 +93,26 @@
   </ul>
 </nav>
 <div class="container">
+ 
   <div class="profile">
     <img src="assets/img/Zijun_Cui_Headshot.JPG" alt="Zijun Cui" />
     <div>
-      <h1>Zijun Cui <span style="font-weight:400;font-size:18px;">崔梓筠</span></h1>
-      <div style="font-size:14px;color:#555;margin-bottom:0.5rem;">Assistant Professor · Department of Computer Science and Engineering, Michigan State University</div>
-      <div style="font-size:14px;margin-bottom:0.5rem;">✉️ <a href="mailto:cuizijun@msu.edu">cuizijun@msu.edu</a></div>
+      <h1>Zijun Cui <span style="font-weight:400;font-size:20px;">崔梓筠</span></h1>
+      <div class="role">Assistant Professor · Department of Computer Science and Engineering, Michigan State University</div>
+      <div class="email">✉️ <a href="mailto:cuizijun@msu.edu">cuizijun@msu.edu</a></div>
       <div class="links">
-        <a href="https://www.linkedin.com/in/zijun-cui-949761240/" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com/zijun_cui" target="_blank">Twitter</a>
-        <a href="https://github.com/zijunjkl" target="_blank">GitHub</a>
-        <a href="https://scholar.google.com/citations?hl=en&user=hxkHMJIAAAAJ" target="_blank">Google Scholar</a>
-        <a href="assets/pdf/Resume_ZijunCui_MSU.pdf" target="_blank">CV</a>
+        <a class="lk-linkedin" href="https://www.linkedin.com/in/zijun-cui-949761240/" target="_blank">LinkedIn</a>
+        <a class="lk-twitter"  href="https://twitter.com/zijun_cui" target="_blank">Twitter</a>
+        <a class="lk-github"   href="https://github.com/zijunjkl" target="_blank">GitHub</a>
+        <a class="lk-scholar"  href="https://scholar.google.com/citations?hl=en&user=hxkHMJIAAAAJ" target="_blank">Google Scholar</a>
+        <a class="lk-cv"       href="assets/pdf/Resume_ZijunCui_MSU.pdf" target="_blank">CV</a>
+      </div>
+      <div class="bio-vision">
+        My research vision is to make AI systems smarter by teaching them the rules of the world, bridging domain knowledge from physics and more with modern deep learning.
       </div>
     </div>
   </div>
-
+ 
   <section>
     <h2>Research Interests</h2>
     <ul class="plain">
@@ -77,7 +122,7 @@
       <li>AI for Health</li>
     </ul>
   </section>
-
+ 
   <section>
     <h2>Education</h2>
     <ul class="edu">
@@ -86,7 +131,21 @@
       <li>B.S. in Physics, University of Science and Technology of China (USTC)</li>
     </ul>
   </section>
-
+ 
+  <section>
+    <h2>Recent News</h2>
+    <table class="news-table">
+      <tr>
+        <td>2026</td>
+        <td><span class="venue-tag">CVPR</span> PAD-Hand: Physics-Aware Diffusion for Hand Motion Recovery</td>
+      </tr>
+      <tr>
+        <td>2026</td>
+        <td><span class="venue-tag">TMLR</span> Bayesian Network Structure Discovery Using Large Language Models</td>
+      </tr>
+    </table>
+  </section>
+ 
 </div>
 <footer>&copy; 2026 Zijun Cui · Michigan State University</footer>
 </body>
